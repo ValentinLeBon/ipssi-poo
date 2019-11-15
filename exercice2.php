@@ -2,6 +2,8 @@
 
 require_once('vendor/autoload.php');
 
-use Ipssi\Evaluation\Useless;
+$climate = new League\CLImate\CLImate;
 
-new Useless(); // Ceci ne sert à rien
+class Document {
+    public function document();
+}

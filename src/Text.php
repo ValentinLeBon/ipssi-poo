@@ -4,20 +4,18 @@
 namespace Ipssi\Evaluation;
 
 
-class Text
+use Ipssi\Evaluation\Exception\Colors;
+use Ipssi\Evaluation\Position;
+
+class Text extends Colors implements Position
 {
     protected $text;
-    protected $font;
-    protected $size;
+
 
     public function __construct(
-        string $text,
-        string $font,
-        int $size
+        string $text
     )
     {
         $this->text = $text;
-        $this->font = $font;
-        $this->size = $size;
     }
 }

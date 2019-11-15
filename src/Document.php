@@ -2,19 +2,19 @@
 
 
 namespace Ipssi\Evaluation;
+use Ipssi\Evaluation\Shape;
+use Ipssi\Evaluation\Text;
+use Ipssi\Evaluation\Image;
 
 
 class Document
 {
-    private $x;
-    private $y;
+    protected $nameDoc;
+    protected $solor;
 
     public function __construct(
-        int $x,
-        int $y
+        string $nameDoc
     )
     {
-        $this->x = $x;
-        $this->y = $y;
     }
 }
